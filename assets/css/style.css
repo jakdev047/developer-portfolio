@@ -12,8 +12,16 @@ body{
   overflow-x: hidden;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  text-transform: capitalize;
+}
+
 img {
   max-width: 100%;
+}
+
+p {
+  color: #696969;
 }
 
 .container {
@@ -30,7 +38,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 30px;
+  flex-wrap: wrap;
+  background: url('../images/top-banner.png')no-repeat center;
+  background-size: cover;
+  height: 700px;
+}
+.welcome-hero-txt {
+  padding-left: 10%;
 }
 .welcome-hero h2 {
   font-size: 50px;
@@ -42,10 +56,92 @@ img {
 .welcome-hero-txt h3 {
   text-transform: capitalize;
   margin: 20px 0;
-}
 
+}
 .welcome-hero-txt p {
   max-width: 500px;
   line-height: 1.8;
   margin-bottom: 20px;
+}
+.link-btn,.link-btn:hover,.link-btn:focus {
+  text-decoration: none;
+  background: linear-gradient(45deg, lightsalmon, tomato);
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: .5s;
+}
+
+.link-btn:hover,.link-btn:focus{
+  background: linear-gradient(45deg,tomato,lightsalmon);
+}
+
+/* dream-area */
+.dream-area {
+  background: url('../images/dream-bg.png')no-repeat right;
+}
+.dream-area h3 {
+  text-transform: initial;
+}
+
+.dream-area  .welcome-hero-txt {
+  padding-left: 0;
+  padding-right: 10%;
+}
+
+/* experience-area */
+.experience-area {
+  background: url('../images/exp-bg.png')no-repeat left;
+}
+.experience-area h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  padding:0px 80px;
+}
+.experience-area-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.single-experience-area {
+  box-shadow: 5px 7px 40px grey;
+  width: 850px;
+  padding: 40px;
+  margin:30px;
+  border-radius: 10px;
+  height: 350px;
+  overflow: hidden;
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, lightsalmon, tomato);
+  border-image-slice: 1;
+}
+
+.ex-blue-border {
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, blue, cyan);
+  border-image-slice: 1;
+}
+.single-experience-area h3 {
+  font-size: 40px;
+}
+.single-experience-area h4 {
+  font-size: 24px;
+  color: orange;
+  margin-top: 30px;
+}
+
+.single-experience-area p {
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+/* footer-secton */
+.footer-secton p {
+  line-height: 1.8;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0;
 }
